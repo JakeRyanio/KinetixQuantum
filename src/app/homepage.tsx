@@ -82,21 +82,21 @@ export default function KinetixQuantumSite() {
                   <li className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                     <div className="flex items-center gap-3">
                       <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                      <span className="font-medium">Simple</span>
+                      <span className="font-medium text-cyan-400">Simple</span>
                     </div>
                     <span className="ml-5 sm:ml-0 text-slate-300">clear and easy to understand.</span>
                   </li>
                   <li className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                     <div className="flex items-center gap-3">
                       <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                      <span className="font-medium">Tangible</span>
+                      <span className="font-medium text-cyan-400">Tangible</span>
                     </div>
                     <span className="ml-5 sm:ml-0 text-slate-300">rooted in real value creation.</span>
                   </li>
                   <li className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                     <div className="flex items-center gap-3">
                       <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                      <span className="font-medium">Kinetic</span>
+                      <span className="font-medium text-cyan-400">Kinetic</span>
                     </div>
                     <span className="ml-5 sm:ml-0 text-slate-300">always flowing toward the highest energy and return potential.</span>
                   </li>
