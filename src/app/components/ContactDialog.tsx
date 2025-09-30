@@ -179,12 +179,15 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
                       focus:border-transparent"
           >
             <option value="">Select range</option>
-            <option value="<$250K">&lt;$250K</option>
-            <option value="$250K – $500K">$250K – $500K</option>
+            <option value="<$500K">&lt;$500K</option>
             <option value="$500K – $1M">$500K – $1M</option>
             <option value="$1M – $5M">$1M – $5M</option>
-            <option value="$5M+">$5M+</option>
+            <option value="$5M – $10M">$5M – $10M</option>
+            <option value="$10M+">$10M+</option>
           </select>
+          <p className="mt-1.5 text-xs text-slate-400">
+            *Commitments under $1M may qualify for specific allocations however full portfolio allocation starts at $1M
+          </p>
         </div>
 
         <div>
