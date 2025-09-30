@@ -60,7 +60,7 @@ export const allocations = [
     range: "15–20% Allocation",
     kineticForce: "Grounding capital in productive assets",
     bullets: [
-      "Multifamily, data centers, Section 8, land",
+      "Multifamily, data centers, guaranteed income, land",
       "Income + appreciation + inflation hedge",
       "Hard-asset spine of the fund"
     ]

@@ -10,6 +10,10 @@ Place your partner logo images in this directory with these exact filenames:
 - `prime-trader.png` - Prime Trader (blue bull logo)
 - `aa-logo.png` - AA Partners (gold triangular logo)
 - `binghatti.png` - Binghatti (white/black logo)
+- `utila.png` - Utila (partner logo)
+- `trecante-ventures.png` - Trecante Ventures (venture capital logo)
+- `omniscope.png` - Omniscope (trading infrastructure logo)
+- `constellation.png` - Constellation (partner logo)
 
 ## Image Guidelines:
 - **Format**: PNG (for transparent backgrounds)

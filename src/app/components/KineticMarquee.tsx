@@ -20,7 +20,7 @@ const ITEMS: Item[] = [
   {
     key: "commodities",
     name: "Commodities & Arbitrage",
-    roi: "~30–50%",
+    roi: "50%+",
     icon: Coins,
     image: "/images/commodities.jpg",
     roiDetails: "Extract profit from real-world imbalances through strategic commodity positioning and crypto-hard asset arbitrage opportunities."

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ArrowRight, ExternalLink, TrendingUp, Users, Shield, Zap } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -43,49 +44,62 @@ export default function KinetixQuantumSite() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-7xl font-space font-bold leading-tight mb-12"
+              className="text-5xl md:text-7xl font-space font-bold leading-tight mb-8"
             >
               Kinetix <span className="text-cyan-400">Quantum</span>
             </motion.h1>
 
-            <motion.div
+            {/* Hero Subline */}
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-lg md:text-xl font-medium text-cyan-400 mb-12 leading-relaxed glow-text"
+            >
+              The Fund of the Future — Accessible Today.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-5xl mx-auto space-y-8"
             >
               <p className="text-center">
-                We don't gamble on abstractions. We deploy capital into places where energy, resources, and 
-                innovation intersect & then we move that energy fluidly across domains. <br className="hidden md:block" />
+                We don't gamble on abstractions. We deploy capital where energy, resources, and innovation intersect—and then move that energy fluidly across domains.
+              </p>
+              
+              <p className="text-center font-medium">
                 Every dollar in motion amplifies itself.
               </p>
               
               <p className="text-center">
-                Unlike funds hiding behind "exotic derivatives" and opaque quant jargon, <br className="hidden md:block" />
-                our strategies are designed to be:
+                Unlike most funds that hide behind exotic derivatives and opaque jargon, our strategies are:
               </p>
               
               <div className="flex justify-center">
                 <ul className="text-left space-y-3 text-lg">
                   <li className="flex items-center gap-4">
                     <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                    <span className="font-medium">Simple to understand.</span>
+                    <span className="font-medium">Simple</span> — clear and easy to understand.
                   </li>
                   <li className="flex items-center gap-4">
                     <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                    <span className="font-medium">Tangible in what value is being created.</span>
+                    <span className="font-medium">Tangible</span> — rooted in real value creation.
                   </li>
                   <li className="flex items-center gap-4">
                     <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                    <span className="font-medium">Kinetic — always moving where the energy and return potential is highest.</span>
+                    <span className="font-medium">Kinetic</span> — always flowing toward the highest energy and return potential.
                   </li>
                 </ul>
               </div>
               
               <p className="text-center leading-relaxed">
-                For too long, traditional funds have treated money as something to be parked, warehoused, or 
-                obscured behind jargon. They hide in complex derivatives, in opaque strategies, <br className="hidden md:block" />
-                in abstractions that create confusion instead of clarity. In doing so, they forget the truth:
+                Traditional funds treat money as something to be parked or warehoused.
+              </p>
+              
+              <p className="text-center leading-relaxed">
+                They bury it in complexity, forgetting a simple truth:
               </p>
               
               <div className="text-center pt-4">
@@ -99,8 +113,8 @@ export default function KinetixQuantumSite() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex justify-center items-center"
             >
               <Dialog open={contactDialogOpen} onOpenChange={setContactDialogOpen}>
                 <DialogTrigger asChild>
@@ -115,16 +129,6 @@ export default function KinetixQuantumSite() {
                 </DialogTrigger>
                 <ContactDialog open={contactDialogOpen} onOpenChange={setContactDialogOpen} />
               </Dialog>
-
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 
-                          px-8 py-3 rounded-full font-medium group"
-              >
-                View Investor Deck
-                <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
             </motion.div>
             </div>
           </div>
@@ -230,9 +234,8 @@ export default function KinetixQuantumSite() {
                 "Our outcomes are entangled with our LPs — we only succeed when you do."
               </p>
               
-              <p>
-                Kinetix Quantum maintains <span className="text-violet-400 font-medium">superposition</span> until 
-                the right moment to collapse into <span className="text-lime-400 font-medium">realized profits</span>.
+              <p className="whitespace-nowrap">
+                Kinetix Quantum maintains <span className="text-violet-400 font-medium">superposition</span> until the right moment to collapse into <span className="text-lime-400 font-medium">realized profits</span>.
               </p>
               
               <p>
@@ -508,12 +511,28 @@ export default function KinetixQuantumSite() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto"
+              className="text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8"
             >
-              We charge <span className="font-semibold text-white">ZERO fixed fees</span>. Instead, we participate in profits. 
-              We win together and every LP participates in impact. <span className="text-lime-400 font-medium">2–3% of committed capital</span> flows 
-              into charitable ventures, ensuring that as we grow, the world grows with us.
+              The Kinetix Flow Model transforms the outdated fee structure into a universal cycle of reciprocity. Instead of paying management fees, our LPs direct <span className="text-lime-400 font-medium">2–3% of their capital</span> into charitable ventures — tax-deductible, impact-driven, and personally chosen. We don't extract. We align. We grow together, and the world grows with us.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="text-center"
+            >
+              <Link href="/flow-model">
+                <Button 
+                  variant="outline" 
+                  className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 
+                            px-8 py-3 rounded-full font-medium"
+                >
+                  Learn about the FLOW
+                </Button>
+              </Link>
+            </motion.div>
           </div>
         </Container>
       </Section>
@@ -561,12 +580,32 @@ export default function KinetixQuantumSite() {
                 We call this annual payout the <span className="text-cyan-400">Quantum Dividend</span> — a symbol of alignment, reciprocity, and collective growth.
               </p>
             </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="text-center mt-12"
+            >
+              <Link href="/venture-pool">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-violet-500 to-cyan-500 hover:from-violet-600 hover:to-cyan-600 
+                            text-white font-medium px-8 py-3 rounded-full shadow-lg 
+                            hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
+                  Take A Deeper Dive
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </motion.div>
           </div>
         </Container>
       </Section>
 
-      {/* Team */}
-      <Section id="team">
+      {/* Team - Temporarily Hidden */}
+      <Section id="team" className="hidden">
         <Container>
           <div className="text-center mb-16">
             <motion.h3
@@ -580,30 +619,58 @@ export default function KinetixQuantumSite() {
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 max-w-2xl mx-auto justify-center">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center p-6 rounded-2xl border border-slate-800 bg-slate-900/40 
-                          backdrop-blur-sm hover:border-cyan-400/30 transition-colors duration-300"
-              >
-                <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-cyan-400/30">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={96}
-                    height={96}
-                    className="w-full h-full object-cover"
-                    priority
-                  />
-                </div>
-                <h4 className="text-xl font-medium text-white mb-2">{member.name}</h4>
-                <div className="text-cyan-400 font-medium">{member.role}</div>
-              </motion.div>
-            ))}
+            {teamMembers.map((member, index) => {
+              const isJakeRyan = member.name === "Jake Ryan";
+              const isKyleJackson = member.name === "Kyle Jackson";
+              const isClickable = isJakeRyan || isKyleJackson;
+              
+              const CardContent = (
+                <motion.div
+                  key={member.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className={`text-center p-6 rounded-2xl border border-slate-800 bg-slate-900/40 
+                            backdrop-blur-sm hover:border-cyan-400/30 transition-colors duration-300
+                            ${isClickable ? 'cursor-pointer hover:scale-105 transform transition-transform' : ''}`}
+                >
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-cyan-400/30">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
+                  </div>
+                  <h4 className="text-xl font-medium text-white mb-2">
+                    {member.name}
+                    {isClickable && <ExternalLink className="inline ml-2 h-4 w-4 opacity-70" />}
+                  </h4>
+                  <div className="text-cyan-400 font-medium">{member.role}</div>
+                </motion.div>
+              );
+
+              if (isJakeRyan) {
+                return (
+                  <Link key={member.name} href="/team/jake-ryan">
+                    {CardContent}
+                  </Link>
+                );
+              }
+
+              if (isKyleJackson) {
+                return (
+                  <Link key={member.name} href="/team/kyle-jackson">
+                    {CardContent}
+                  </Link>
+                );
+              }
+
+              return CardContent;
+            })}
           </div>
         </Container>
       </Section>

@@ -197,8 +197,9 @@ export default function QuantumNetwork() {
             r="2"
             fill="#22D3EE"
             opacity="0.8"
-            initial={{ offsetDistance: "0%" }}
-            animate={{ offsetDistance: ["0%", "100%"] }}
+            animate={{
+              offsetDistance: ["0%", "100%"]
+            }}
             transition={{
               duration: 6,
               repeat: Infinity,
@@ -207,7 +208,8 @@ export default function QuantumNetwork() {
             }}
             style={{
               offsetPath: `path('${path.d}')`,
-              offsetRotate: "0deg"
+              offsetRotate: "0deg",
+              offsetDistance: "0%"
             } as any}
           />
         ))}
@@ -219,8 +221,9 @@ export default function QuantumNetwork() {
             r="1.5"
             fill="#FFFFFF"
             opacity="0.6"
-            initial={{ offsetDistance: "0%" }}
-            animate={{ offsetDistance: ["0%", "100%"] }}
+            animate={{
+              offsetDistance: ["0%", "100%"]
+            }}
             transition={{
               duration: 8,
               repeat: Infinity,
@@ -229,7 +232,8 @@ export default function QuantumNetwork() {
             }}
             style={{
               offsetPath: `path('${path.d}')`,
-              offsetRotate: "0deg"
+              offsetRotate: "0deg",
+              offsetDistance: "0%"
             } as any}
           />
         ))}
@@ -241,8 +245,9 @@ export default function QuantumNetwork() {
             r="1"
             fill="#000000"
             opacity="0.4"
-            initial={{ offsetDistance: "0%" }}
-            animate={{ offsetDistance: ["0%", "100%"] }}
+            animate={{
+              offsetDistance: ["0%", "100%"]
+            }}
             transition={{
               duration: 10,
               repeat: Infinity,
@@ -251,7 +256,8 @@ export default function QuantumNetwork() {
             }}
             style={{
               offsetPath: `path('${path.d}')`,
-              offsetRotate: "0deg"
+              offsetRotate: "0deg",
+              offsetDistance: "0%"
             } as any}
           />
         ))}

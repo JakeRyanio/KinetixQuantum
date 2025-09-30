@@ -9,7 +9,7 @@ const navItems = [
   { href: "#allocations", label: "Allocations" },
   { href: "#advantages", label: "Why Kinetix" },
   { href: "#impact", label: "Impact" },
-  { href: "#team", label: "Team" },
+  // { href: "#team", label: "Team" }, // Temporarily hidden
   { href: "#contact", label: "Contact" },
 ];
 

@@ -41,6 +41,26 @@ const PARTNERS: Partner[] = [
     name: "Binghatti",
     image: "/images/partners/binghatti.png"
   },
+  {
+    key: "utila",
+    name: "Utila",
+    image: "/images/partners/utila.png"
+  },
+  {
+    key: "trecante-ventures",
+    name: "Trecante Ventures",
+    image: "/images/partners/trecante-ventures.png"
+  },
+  {
+    key: "omniscope",
+    name: "Omniscope",
+    image: "/images/partners/omniscope.png"
+  },
+  {
+    key: "constellation",
+    name: "Constellation",
+    image: "/images/partners/constellation.png"
+  },
 ];
 
 // Triple the partners for seamless infinite scroll
@@ -109,8 +129,8 @@ function PartnerLogo({ partner, width }: { partner: Partner; width: number }) {
           src={partner.image}
           alt={partner.name}
           fill
-          className="object-contain p-4 transition-transform duration-300 group-hover:scale-110"
-          priority
+          className="object-contain p-2 transition-transform duration-300 group-hover:scale-110"
+          unoptimized
         />
         
         {/* Subtle glow on hover */}
