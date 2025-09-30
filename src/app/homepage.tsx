@@ -77,19 +77,28 @@ export default function KinetixQuantumSite() {
                 Unlike most funds that hide behind exotic derivatives and opaque jargon, our strategies are:
               </p>
               
-              <div className="flex justify-center">
-                <ul className="text-left space-y-3 text-lg">
-                  <li className="flex items-center gap-4">
-                    <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                    <span className="font-medium">Simple</span> — clear and easy to understand.
+              <div className="flex justify-center px-4">
+                <ul className="text-left space-y-4 text-base md:text-lg w-full max-w-md">
+                  <li className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    <div className="flex items-center gap-3">
+                      <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
+                      <span className="font-medium">Simple</span>
+                    </div>
+                    <span className="ml-5 sm:ml-0 text-slate-300">clear and easy to understand.</span>
                   </li>
-                  <li className="flex items-center gap-4">
-                    <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                    <span className="font-medium">Tangible</span> — rooted in real value creation.
+                  <li className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    <div className="flex items-center gap-3">
+                      <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
+                      <span className="font-medium">Tangible</span>
+                    </div>
+                    <span className="ml-5 sm:ml-0 text-slate-300">rooted in real value creation.</span>
                   </li>
-                  <li className="flex items-center gap-4">
-                    <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
-                    <span className="font-medium">Kinetic</span> — always flowing toward the highest energy and return potential.
+                  <li className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    <div className="flex items-center gap-3">
+                      <span className="h-2 w-2 rounded-full bg-cyan-400 flex-shrink-0" />
+                      <span className="font-medium">Kinetic</span>
+                    </div>
+                    <span className="ml-5 sm:ml-0 text-slate-300">always flowing toward the highest energy and return potential.</span>
                   </li>
                 </ul>
               </div>
